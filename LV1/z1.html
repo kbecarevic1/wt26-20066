@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Zadatak 1</title>
+    </head>
+    <body>
+        <h1>Sarajevo Hackaton</h1>
+        <section>
+            <h2>Sta je Sarajevo Hackaton?</h2>
+            <p>>Ako uzivate u programiranju i voljeli biste svoje vjestine pokazati na takmicenju, ovo je mjesto za vas.</p>
+        </section>
+        <section>
+            <h2>Kome je namijenjen?</h2>
+            <p>Hackaton je namijenjen svim srednjoskolcima i studentima koji su zainteresovani za programiranje i razvoj softvera.</p>
+        </section>
+        <img src="slika.png" alt="Slika postera">
+        <h2>Uslovi ucesca:</h2>
+        <ul>
+            <li>16+ Godina</li>
+            <li>Znanje programiranja</li>
+            <li>Zelja za timskim radom</li>
+        </ul>
+
+        <h2>Prijava</h2>
+        <p>Za prijavu popunite formu ispod. Vise informacija mozete naci na stranici <a href="https://www.etf.unsa.ba/">ETF Sarajevo</a>.</p>
+
+        <form>
+            <label for="ime">Ime i prezime:</label><br>
+            <input type="text" id="ime" name="ime"><br><br>
+
+            Status:<br>
+            <input type="radio" id="srednjoskolac" name="status" value="srednjoskolac">
+            <label for="srednjoskolac"> Srednjoskolac</label><br>
+            <input type="radio" id="student" name="status" value="student">
+            <label for="student">Student</label><br><br>
+
+            <label for="kategorija">Kategorija:</label>
+            <select id="kategorija" name="kategorija">
+                <option value="web">Web aplikacije</option>
+                <option value="mobilne">Mobilne aplikacije</option>
+                <option value="ai">Vjestacka inteligencija</option>
+            </select><br><br>
+
+            <input type="checkbox" id="pravila" name="pravila">
+            <label for="pravila">Prihvatam pravila takmicenja</label><br><br>
+
+            <input type="submit" value="Prijavi se">
+        </form>
+
+    </body>
+</html>
