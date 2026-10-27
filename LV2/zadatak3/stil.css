@@ -1,0 +1,55 @@
+body {
+    width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-family: verdana;
+    background-color: #f2f2f2;
+}
+
+#glavni-naslov {
+    margin: 0;
+    padding: 20px 0 10px 0;
+    color: #00539f;
+    text-align: center;
+    text-shadow: 2px 2px 1px #bbb;
+}
+
+.uvod {
+    text-align: center;
+}
+
+.ponuda {
+    float: left;
+    width: 200px;
+    margin-right: 20px;
+    padding: 15px;
+    font-family: verdana;
+    background-color: white;
+    border: 2px solid #999;
+}
+
+.ponuda h2 {
+    margin: 0;
+    font-size: 120%;
+    color: #333;
+}
+
+.info {
+    color: #00539f;
+}
+
+.preporucena {
+    background-color: #fff4d6;
+    border: 2px solid #e69500;
+}
+
+.razlog {
+    color: #a35f00;
+    font-size: 90%;
+}
+
+.napomena {
+    clear: both;
+    padding-top: 20px;
+    text-align: center;
+}

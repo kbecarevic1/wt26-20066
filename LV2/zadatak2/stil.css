@@ -1,0 +1,67 @@
+body {
+    width: 700px;
+    margin: 0 auto;
+    padding: 0 20px 20px 20px;
+    font-family: verdana;
+    background-color: #f4f1ea;
+}
+
+h1 {
+    margin: 0;
+    padding: 20px 0;
+    color: #00539f;
+}
+
+#meni {
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+#meni li {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#meni a {
+    display: block;
+    width: 200px;
+    padding: 10px 15px;
+    color: #00539f;
+    background-color: #dbe8f5;
+    border: 2px solid #00539f;
+}
+
+#meni a:hover {
+    color: white;
+    background-color: #00539f;
+    border: 2px solid black;
+}
+
+.odjeljak {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+.odjeljak h2 {
+    color: #00539f;
+}
+
+/*
+  PRVA VARIJANTA (inline)
+
+  #meni li {
+    display: inline;
+  }
+
+  #meni a {
+    display: inline;
+    width: 200px;
+    padding: 10px 15px;
+    color: #00539f;
+    background-color: #dbe8f5;
+    border: 2px solid #00539f;
+  }
+
+*/
