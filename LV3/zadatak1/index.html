@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Tutorijal 3, Uvod</title>
+    </head>
+    <body>
+        <script>
+            function procijeni() {
+                const broj = prompt("Unesite broj ljudi u redu:");
+                const brojLjudi = parseInt(broj);
+                if (isNaN(brojLjudi)) {
+                    return "Molimo unesite validan broj.";
+                } else if (brojLjudi < 5) return "Mali red";
+                else if (brojLjudi < 10) return "Srednji red";
+                else return "Prevelik red";
+            }
+            alert(procijeni());
+        </script>
+    </body>
+</html>

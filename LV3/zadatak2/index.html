@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Zad</title>
+    </head>
+    <body>
+        <button onclick="paketi()">Pokreni</button>
+        <script>
+            function paketi() {
+                let n = Number(prompt("Unesite broj paketa"));
+                let k = Number(prompt("Unesite do pauze"));
+
+                for (let i = 0; i < n; i++) {
+                    // nema pauzi nakon zadnjeg paketa
+                    if (i % k == 0 && i < n - 1 && i != 0) {
+                        console.log("Pauza");
+                    }
+                    console.log("Paket");
+                }
+            }
+        </script>
+    </body>
+</html>
