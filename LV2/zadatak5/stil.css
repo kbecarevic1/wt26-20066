@@ -1,0 +1,30 @@
+html {
+    background-color: yellow;
+}
+
+body {
+    margin: 0;
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 8px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+th {
+    background-color: gray;
+}
+
+.predmet {
+    width: 135px;
+    text-align: left;
+}
