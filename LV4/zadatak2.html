@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Zadatak 2 - Obavijest</title>
+        <style>
+            #greska {
+                color: red;
+            }
+            #pregled {
+                border: 2px solid gray;
+                padding: 10px;
+                margin-top: 20px;
+                width: 400px;
+            }
+            #pKategorija {
+                padding: 2px 6px;
+                color: white;
+                background-color: gray;
+            }
+        </style>
+        <script src="zadatak2.js"></script>
+    </head>
+    <body>
+        <h2>Nova obavijest</h2>
+
+        <form id="forma" onsubmit="return false;">
+            Naslov:<br />
+            <input type="text" id="naslov" /><br /><br />
+
+            Tekst obavijesti:<br />
+            <textarea id="tekst" rows="4" cols="40"></textarea><br /><br />
+
+            Kategorija:
+            <input type="radio" name="kategorija" value="Hitno" checked /> Hitno
+            <input type="radio" name="kategorija" value="Informacija" />
+            Informacija <br /><br />
+
+            <input type="button" value="Pregled" onclick="prikaziPregled()" />
+            <input
+                type="button"
+                value="Resetuj formu"
+                onclick="resetujFormu()" />
+        </form>
+
+        <p id="greska"></p>
+
+        <div id="pregled">
+            <span id="pKategorija">-</span>
+            <h3 id="pNaslov">Nema pregleda</h3>
+            <p id="pTekst">Popunite formu i kliknite "Pregled".</p>
+        </div>
+    </body>
+</html>

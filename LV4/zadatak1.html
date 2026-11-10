@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Zadatak 1 - Kontrolna lista</title>
+        <style>
+            li {
+                margin-bottom: 8px;
+            }
+            .status {
+                font-style: italic;
+            }
+        </style>
+        <script src="zadatak1.js"></script>
+    </head>
+    <body>
+        <h2>Priprema za planinarenje</h2>
+        <p id="sazetak"></p>
+
+        <ul id="lista">
+            <li>
+                <span class="tekst">Spakovati ruksak</span> -
+                <span class="status"></span>
+                <input type="button" onclick="promijeni(this)" />
+            </li>
+            <li>
+                <span class="tekst">Napuniti flašu vode</span> -
+                <span class="status"></span>
+                <input type="button" onclick="promijeni(this)" />
+            </li>
+            <li>
+                <span class="tekst">Provjeriti vremensku prognozu</span> -
+                <span class="status"></span>
+                <input type="button" onclick="promijeni(this)" />
+            </li>
+            <li>
+                <span class="tekst">Napuniti mobitel</span> -
+                <span class="status"></span>
+                <input type="button" onclick="promijeni(this)" />
+            </li>
+            <li>
+                <span class="tekst">Spremiti užinu</span> -
+                <span class="status"></span>
+                <input type="button" onclick="promijeni(this)" />
+            </li>
+        </ul>
+
+        <input type="button" value="Resetuj sve" onclick="resetuj()" />
+    </body>
+</html>
