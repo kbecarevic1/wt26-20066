@@ -23,9 +23,31 @@ function dodaj() {
     greska.textContent = "";
 
     let tabela = document.getElementById("tabela");
-    let red = tabela.insertRow(tabela.rows.length - 1);
-    red.insertCell(0).textContent = naziv;
-    red.insertCell(1).textContent = iznos.toFixed(2);
+
+    const imena = tabela.querySelectorAll("td:nth-child(1)");
+
+    let postoji = false;
+    let brojac = 2;
+    for (let ime of imena) {
+        console.log(ime.textContent);
+        if (naziv == ime.textContent) {
+            postoji = true;
+            break;
+        }
+        brojac++;
+    }
+    console.log(brojac);
+
+    if (!postoji) {
+        let red = tabela.insertRow(tabela.rows.length - 1);
+        red.insertCell(0).textContent = naziv;
+        red.insertCell(1).textContent = iznos.toFixed(2);
+    } else {
+        let red = tabela.querySelector(`tr:nth-child(${brojac})`);
+        console.log(red);
+        let kolona = red.firstElementChild.firstElementSibling;
+        console.log(kolona);
+    }
 
     azurirajZbir();
 
